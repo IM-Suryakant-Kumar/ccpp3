@@ -4,6 +4,7 @@ import helmet from "helmet";
 import cors from "cors";
 import morgan from "morgan";
 import express from "express";
+import { errorHandlerMiddleware, notFoundMiddleware } from "./middlewares";
 
 const app = express();
 
@@ -16,15 +17,16 @@ app.use(morgan("tiny"));
 
 // routers
 
-// error handlers
-
+// error handler middlewares
+app.use(notFoundMiddleware);
+app.use(errorHandlerMiddleware);
 // server listening
-const PORT = process.env.PORT
+const PORT = process.env.PORT;
 const start = async () => {
-    try {
-        app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`))
-    } catch (error) {
-        console.log(error)
-    }
-}
-start()
+	try {
+		app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
+	} catch (error) {
+		console.log(error);
+	}
+};
+start();
