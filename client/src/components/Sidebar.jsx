@@ -72,7 +72,7 @@ export const Sidebar = () => {
 					<span className="">History</span>
 				</NavLink>
 			</nav>
-			<div className="absolute bottom-4 left-[25%] flex justify-center items-center">
+			<div className="absolute bottom-6 left-[25%] flex justify-center items-center">
 				<div className="w-1 h-1 mr-1 bg-white rounded-full"></div>
 				<div className="w-2 h-2 mr-1 bg-white rounded-full"></div>
 				<div className="w-3 h-3 bg-white rounded-full"></div>
