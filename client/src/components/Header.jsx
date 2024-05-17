@@ -5,7 +5,7 @@ import Ellpse from "../assets/Ellipse.png";
 
 export const Header = () => {
 	return (
-		<header className="pl-56 h-[5rem] flex items-center shadow-sm">
+		<header className="absolute left-56 pl-4 right-0 h-[5rem] flex items-center shadow-md">
 			<Link className="text-[1.79rem] font-semibold text-[#353535]" to="/">
 				Dashboard
 			</Link>
