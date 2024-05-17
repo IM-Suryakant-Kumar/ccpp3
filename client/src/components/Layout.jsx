@@ -9,7 +9,7 @@ export const Layout = () => {
 			{/* aside */}
 			<Sidebar />
 			{/* main section */}
-			<main className="absolute left-56 top-[5rem] right-0 pl-4">
+			<main className="absolute left-60 top-[5rem] right-0 pl-4">
 				<Outlet />
 			</main>
 		</div>
