@@ -45,6 +45,13 @@ export const Home = () => {
 					</div>
 				</div>
 			</div>
+			{/* google map */}
+			<iframe
+				className="mt-4 w-full h-[25rem]"
+				src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19957653.630640335!2d-97.41352233235972!3d40.5914680632176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1715944568563!5m2!1sen!2sin"
+				allowfullscreen=""
+				loading="lazy"
+			></iframe>
 		</div>
 	);
 };
