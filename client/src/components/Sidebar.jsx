@@ -6,10 +6,11 @@ import { GiNotebook } from "react-icons/gi";
 import { PiShippingContainerBold } from "react-icons/pi";
 import { FaRegUserCircle } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 export const Sidebar = () => {
 	return (
-		<aside className="min-h-screen w-60 border bg-[#6B120A] rounded-e-[2.8rem] text-white flex items-center">
+		<aside className="min-h-screen w-60 border bg-[#6B120A] rounded-e-[2.8rem] text-white flex items-center relative">
 			<nav className="flex flex-col">
 				<NavLink
 					className="mx-3 w-52 h-[3.5rem] flex gap-2 items-center px-4 rounded-lg font-semibold"
@@ -71,6 +72,12 @@ export const Sidebar = () => {
 					<span className="">History</span>
 				</NavLink>
 			</nav>
+			<div className="absolute bottom-4 left-[25%] flex justify-center items-center">
+				<div className="w-1 h-1 mr-1 bg-white rounded-full"></div>
+				<div className="w-2 h-2 mr-1 bg-white rounded-full"></div>
+				<div className="w-3 h-3 bg-white rounded-full"></div>
+				<MdKeyboardDoubleArrowRight size="1.7rem" />
+			</div>
 		</aside>
 	);
 };
